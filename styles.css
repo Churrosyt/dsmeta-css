@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 * {
   font-family: "Roboto", sans-serif;
@@ -9,8 +9,8 @@
 
 body,
 html {
-  background-color: #000000;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
 
 a,
@@ -48,16 +48,16 @@ header {
   font-weight: 300;
 }
 
+.dsmeta-card {
+  background-color: #283142;
+  border-radius: 10px;
+  padding: 30px 10px;
+}
+
 .dsmeta-container {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-}
-
-.dsmeta-card {
-  background-color: #283142;
-  border-radius: 10px;
-  padding: 10px 30px;
 }
 
 #sales {
@@ -67,12 +67,14 @@ header {
 .dsmeta-sales-title {
   color: #676fff;
   font-size: 24px;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
 }
+
 .dsmeta-form-control-container {
   margin-bottom: 16px;
   max-width: 300px;
 }
+
 .dsmeta-form-control {
   width: 100%;
   height: 46px;
@@ -108,7 +110,8 @@ header {
   height: 74px;
   border-top: 1px solid #5f6e82;
 }
-.dsmeta-sales-table tbody tr:hover td {
+
+.dsmeta-sales-table tbody tr:hover > td {
   background-color: #384459;
 }
 
@@ -117,8 +120,8 @@ header {
 }
 
 .dsmeta-red-btn-container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .dsmeta-red-btn {
@@ -134,35 +137,37 @@ header {
 }
 
 .dsmeta-red-btn img {
-  width: 19px;
+    width: 19px;
 }
 
 .show576 {
-  display: none;
+    display: none;
 }
 
 .show992 {
-  display: none;
+    display: none;
 }
 
 @media (min-width: 576px) {
-  .show576 {
-    display: table-cell;
-  }
-  .dsmeta-card {
-    padding: 35px;
-  }
+    .show576 {
+        display: table-cell;
+    }
 
-  .dsmeta-sales-table tbody tr {
-    height: 55px;
-  }
-  .dsmeta-sales-table tbody {
-    font-size: 18px;
-  }
+    .dsmeta-card {
+        padding: 35px;
+    }
+
+    .dsmeta-sales-table tbody tr {
+        height: 55px;
+    }
+
+    .dsmeta-sales-table tbody {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 992px) {
-  .show992 {
-    display: table-cell;
-  }
+    .show992 {
+        display: table-cell;
+    }
 }
